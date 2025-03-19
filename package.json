@@ -1,0 +1,24 @@
+{
+  "name": "azure-table-viewer",
+  "version": "1.0.0",
+  "description": "A static website to read and display content from Azure Table Storage in a grid format.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -o" 
+  },
+  "dependencies": {
+    "axios": "^1.8.3"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "azure",
+    "table",
+    "viewer",
+    "static",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
