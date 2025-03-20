@@ -4,102 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partner Tech Win Room FAQs</title>
-    <!-- <link rel="stylesheet" href="src/styles/style.css">  -->
+    <!-- Link to Google Fonts for a clean and professional font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* Corporate Styling */
         body {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif; /* Use a professional font */
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f9f9f9; /* Light background for a clean look */
+            color: #333; /* Dark text for readability */
         }
 
+        /* Header styling */
         .header {
-            background-color: #004080;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+            background-color: #004080; /* Corporate blue background */
+            color: white; /* White text for contrast */
+            padding: 20px 0; /* Add vertical padding */
+            text-align: center; /* Center-align the content */
         }
 
         .header img {
-            max-width: 150px;
-            margin-bottom: 10px;
+            max-width: 150px; /* Limit the logo size */
+            margin-bottom: 10px; /* Add spacing below the logo */
         }
 
         .header h1 {
-            margin: 0;
-            font-size: 24px;
+            margin: 0; /* Remove default margin */
+            font-size: 24px; /* Set font size for the title */
         }
 
+        /* Main content container styling */
         .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            width: 80%; /* Set the width of the content area */
+            margin: 20px auto; /* Center the container */
+            background: white; /* White background for contrast */
+            padding: 20px; /* Add padding inside the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 8px; /* Rounded corners */
         }
 
+        /* Table styling */
         .table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+            width: 100%; /* Full width table */
+            border-collapse: collapse; /* Remove gaps between table cells */
+            margin: 20px 0; /* Add spacing above and below the table */
         }
 
         .table th, .table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
+            border: 1px solid #ddd; /* Light border for table cells */
+            padding: 10px; /* Add padding inside cells */
+            text-align: left; /* Align text to the left */
         }
 
         .table th {
-            background-color: #004080;
-            color: white;
+            background-color: #004080; /* Blue background for headers */
+            color: white; /* White text for contrast */
         }
 
         .table tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f2f2f2; /* Light gray background for alternate rows */
         }
 
         .table tr:hover {
-            background-color: #e6f7ff;
+            background-color: #e6f7ff; /* Highlight row on hover */
         }
 
+        /* Footer styling */
         .footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #004080;
-            color: white;
-            margin-top: 20px;
+            text-align: center; /* Center-align the footer text */
+            padding: 10px; /* Add padding inside the footer */
+            background-color: #004080; /* Blue background for footer */
+            color: white; /* White text for contrast */
+            margin-top: 20px; /* Add spacing above the footer */
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <div class="header">
+        <!-- Logo -->
         <img src="https://partnertechwinroom.github.io/PTWRFAQs/assets/image1.png" alt="Logo">
+        <!-- Page Title -->
         <h1>Partner Tech Win Room FAQs</h1>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main Content Section -->
     <div class="container">
+        <!-- Introduction Text -->
         <p>Welcome to the Partner Tech Win Room FAQs page. Here you can find answers to the most common questions.</p>
         <p>Use the filters below to narrow down your search.</p>
         <p>For any further questions, please reach out to your Partner Tech Win Room representative.</p>
 
+        <!-- Data Table -->
         <table id="data-table" class="table">
             <thead>
                 <tr>
+                    <!-- Column 1: Solution Area -->
                     <th>
                         Solution Area<br>
                         <input type="text" placeholder="Filter Area" onkeyup="filterTable(0)">
                     </th>
+                    <!-- Column 2: Frequently Asked Question -->
                     <th>
                         Frequently Asked Question<br>
                         <input type="text" placeholder="Filter Question" onkeyup="filterTable(1)">
                     </th>
+                    <!-- Column 3: Answers -->
                     <th>
                         Answers<br>
                         <input type="text" placeholder="Filter Answer" onkeyup="filterTable(2)">
@@ -107,7 +118,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Data will be populated here by app.js -->
+                <!-- Data will be dynamically populated here by app.js -->
             </tbody>
         </table>
     </div>
@@ -117,6 +128,7 @@
         &copy; 2023 Partner Tech Win Room. All rights reserved.
     </div>
 
+    <!-- JavaScript File -->
     <script src="src/scripts/app.js"></script>
 </body>
 </html>
