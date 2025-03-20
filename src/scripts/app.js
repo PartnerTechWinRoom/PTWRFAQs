@@ -5,7 +5,7 @@ const endpoint = `https://${accountName}.table.core.windows.net/${tableName}?${s
 
 
 async function fetchData() {
-    const selectedFields = "$select=_ID,_Partner,_Area,_Question,_Answer"; // Specify the fields you want to fetch
+    const selectedFields = "$select=_Area,_Question,_Answer"; // Specify the fields you want to fetch
     const urlWithSelect = `${endpoint}&${selectedFields}`;
 
     console.log("Endpoint URL with $select: ", urlWithSelect);
@@ -32,7 +32,7 @@ function populateGrid(data) {
     grid.innerHTML = ""; // Clear existing content
 
     // Define the desired order of fields
-    const fieldOrder = ["_ID", "_Area", "_Partner", "_Question", "_Answer"];
+    const fieldOrder = ["_Area", "_Question", "_Answer"];
 
     data.forEach(item => {
         const row = document.createElement("tr");
