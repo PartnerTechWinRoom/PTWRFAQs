@@ -9,74 +9,117 @@
     <style>
         /* Corporate Styling */
         body {
-            font-family: 'Roboto', Arial, sans-serif; /* Use a professional font */
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9; /* Light background for a clean look */
-            color: #333; /* Dark text for readability */
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         /* Header styling */
         .header {
-            background-color: #004080; /* Corporate blue background */
-            color: white; /* White text for contrast */
-            padding: 20px 0; /* Add vertical padding */
-            text-align: center; /* Center-align the content */
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
 
         .header img {
-            max-width: 150px; /* Limit the logo size */
-            margin-bottom: 10px; /* Add spacing below the logo */
+            max-width: 150px;
+            margin-bottom: 10px;
         }
 
         .header h1 {
-            margin: 0; /* Remove default margin */
-            font-size: 24px; /* Set font size for the title */
+            margin: 0;
+            font-size: 24px;
         }
 
         /* Main content container styling */
         .container {
-            width: 80%; /* Set the width of the content area */
-            margin: 20px auto; /* Center the container */
-            background: white; /* White background for contrast */
-            padding: 20px; /* Add padding inside the container */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            border-radius: 8px; /* Rounded corners */
+            width: 90%; /* Use a percentage for flexible width */
+            max-width: 1200px; /* Limit the maximum width */
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         /* Table styling */
         .table {
             width: 100%; /* Full width table */
-            border-collapse: collapse; /* Remove gaps between table cells */
-            margin: 20px 0; /* Add spacing above and below the table */
+            border-collapse: collapse;
+            margin: 20px 0;
         }
 
         .table th, .table td {
-            border: 1px solid #ddd; /* Light border for table cells */
-            padding: 10px; /* Add padding inside cells */
-            text-align: left; /* Align text to the left */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
         }
 
         .table th {
-            background-color: #004080; /* Blue background for headers */
-            color: white; /* White text for contrast */
+            background-color: #004080;
+            color: white;
         }
 
         .table tr:nth-child(even) {
-            background-color: #f2f2f2; /* Light gray background for alternate rows */
+            background-color: #f2f2f2;
         }
 
         .table tr:hover {
-            background-color: #e6f7ff; /* Highlight row on hover */
+            background-color: #e6f7ff;
         }
 
         /* Footer styling */
         .footer {
-            text-align: center; /* Center-align the footer text */
-            padding: 10px; /* Add padding inside the footer */
-            background-color: #004080; /* Blue background for footer */
-            color: white; /* White text for contrast */
-            margin-top: 20px; /* Add spacing above the footer */
+            text-align: center;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design: Adjust for smaller screens */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 20px; /* Reduce font size for smaller screens */
+            }
+
+            .header img {
+                max-width: 100px; /* Reduce logo size */
+            }
+
+            .container {
+                padding: 15px; /* Reduce padding */
+            }
+
+            .table th, .table td {
+                padding: 8px; /* Reduce cell padding */
+            }
+
+            .table th {
+                font-size: 14px; /* Reduce font size for table headers */
+            }
+
+            .table td {
+                font-size: 12px; /* Reduce font size for table cells */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 18px; /* Further reduce font size */
+            }
+
+            .container {
+                width: 95%; /* Increase width for smaller screens */
+            }
+
+            .table th, .table td {
+                font-size: 10px; /* Further reduce font size */
+                padding: 5px; /* Reduce padding */
+            }
         }
     </style>
 </head>
@@ -126,6 +169,8 @@
     <!-- Footer Section -->
     <div class="footer">
         &copy; 2023 Partner Tech Win Room. All rights reserved.
+        <br>
+        <span id="row-count">Total Rows: 0</span>
     </div>
 
     <!-- JavaScript File -->

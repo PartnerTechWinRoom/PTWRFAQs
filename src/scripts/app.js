@@ -61,6 +61,10 @@ function populateGrid(data) {
 
         grid.appendChild(row); // Append the row to the table body
     });
+
+    // Update the total row count in the footer
+    const rowCount = data.length; // Get the total number of rows
+    document.getElementById("row-count").textContent = `Total Rows: ${rowCount}`;
 }
 
 /**
