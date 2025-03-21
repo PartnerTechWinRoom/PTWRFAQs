@@ -1,3 +1,4 @@
+//Making changes to SQL now
 // Azure Table Storage configuration
 const tableName = "PTWQnA"; // Replace with your Azure Table name
 const accountName = "ptwdatafile"; // Replace with your Azure Storage account name
